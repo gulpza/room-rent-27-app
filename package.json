@@ -2,7 +2,7 @@
   "homepage": "https://gulpza.github.io/room-rent-27-app",
   "name": "room-rent-27-app",
   "version": "5.2.0",
-  "description": "CoreUI Free React Admin Template",
+  "description": "Room For Rent 27",
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
   },
@@ -17,7 +17,8 @@
     "lint": "eslint \"src/**/*.js\"",
     "serve": "vite preview",
     "dev": "vite",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "clean": "gh-pages-clean"
   },
   "dependencies": {
